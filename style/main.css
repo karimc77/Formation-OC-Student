@@ -1,0 +1,259 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 1.4em;
+    padding-top: 40px;
+    margin: 0;
+}
+
+#popular_title, #housing h1, #activities h1{
+    padding-bottom: 25px;
+}
+
+h2 {
+    font-size: 1.3em;
+    font-weight: 700;
+    padding-right: 15px;
+}
+
+
+/*----------------- CHAMP DE RECHERCHE global -----------------*/
+
+#champ {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+}
+
+#champ button {
+    background-color: #0065fc;
+    padding: 18px;
+    border: none;
+    position: relative;
+    top: 0px; left: -10px;
+    color: white;
+}
+
+#button_mobile {
+    border-radius: 15px;
+}
+
+#button_desktop {
+    border-radius: 0 15px 15px 0;
+    font-weight: 600;
+    font-size: 1.0em;
+}
+
+#button_desktop:hover {
+    background-color:#00d9ff;
+    border-radius: 0 15px 15px 0;
+    font-weight: 600;
+    font-size: 1.0em;
+}
+
+.fa-search { 
+    color: white;
+    font-size: 1.3em;
+}
+
+.fa-map-marker-alt {
+    background-color: #f2f2f2;
+    padding: 18px;
+    border-radius: 15px 0 0 15px;
+    font-size: 1.2em;
+    position: relative;
+}
+
+#location {
+    font-weight: 800;
+    font-size: 1.2em;
+    font-family: "Raleway", sans-serif;
+    border: solid #f2f2f2 thin;
+    margin: 0;  
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+     
+}
+
+::placeholder{
+    opacity: 1;
+    color: black;
+}
+
+/*----------------- RECHERCHE & FILTRES global -----------------*/
+
+#buttons_filters {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#buttons_filters button {
+    background-color: white;
+    border: solid 2px #d9d9d9;
+    border-radius: 30px ;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter_title {
+    font-size: 1.3em;
+    font-weight: 700;
+    padding-right: 15px;
+}
+#filters i { 
+    color: #0065fc;
+    background-color: #deebff ;
+    height: 45px;
+    width: 45px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: -10px;
+    font-size: 1.4em;
+}
+
+#filters button:hover {
+    background-color:#00d9ff;
+    color: white;
+}
+
+/*----------------- RECHERCHE INFO global -----------------*/
+
+#info {
+    margin: 10px 0 20px 0;
+}
+
+#info i { 
+    color:#0065fc;
+    border:solid 1px #d9d9d9;
+    padding: 5px;
+    font-size: 0.7em;
+    border-radius: 50%;
+    margin-right: 10px;
+    width:10px;
+    height: 10px;
+    text-align: center;
+}
+
+/*----------------- HEBERGEMENT global -----------------*/
+
+.stars {
+    color: #0065fc;
+    font-size: 0.8em;
+}
+
+.empty {
+    color:#f2f2f2;
+}
+
+h3 {
+    font-size:0.9em;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+h4 {
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+.card {
+    background-color: white;
+    margin: 10px 5px 10px 5px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px 5px #e4e4e4;
+}
+
+/*----------------- POPULAIRE global -----------------*/
+
+#popular {
+    background-color:#f2f2f2; 
+    display: flex; 
+    flex-direction: column;
+}
+
+#popular_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+
+.fa-chart-line {
+    font-weight: 800;
+    font-size: 1.5em;
+    color: black;
+    padding-top: 40px;
+}
+
+#popular_cards .card {
+    display: flex;
+    padding: 5px;
+    height: 140px;
+}
+
+#popular img { 
+    width: 130px; 
+    object-fit: cover;
+    border-radius: 15px 0 0 15px;
+}
+
+#popular .hotel_details  {
+    padding: 5px 20px 5px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#popular h3, h4{
+    margin: 0;
+}
+
+#popular .stars {
+    padding-top: 30px;
+}
+
+/*----------------- HEBERGEMENT MARSEILLE global -----------------*/
+
+#housing img { 
+    height: 115px; 
+    object-fit: cover;
+    border-radius: 15px 15px 0 0px;
+}
+
+#housing .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px;
+}
+
+#housing .hotel_details  {
+    margin: 5px;
+}
+
+#housing h4, #housing h3, #housing .stars { 
+    margin: 7px;
+}
+
+
+/*----------------- ACTIVITIES global -----------------*/
+
+#activities {
+    padding-bottom: 50px;
+}
+
+#activities h3 {
+    padding: 15px;
+    margin:0; 
+}

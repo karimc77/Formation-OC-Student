@@ -1,0 +1,109 @@
+/* MOBILE */
+
+@media all and (max-width:750px) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items:flex-end; 
+        position: relative;
+    }
+
+   #logo {
+        position: absolute;
+        top: 15px;  
+        left: 25px;
+    }
+
+    .navigation {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+
+    #signUp {
+        text-align: end;
+    }
+
+    .navigation li {
+        flex: 0.5; 
+        padding-bottom: 10px;   
+        border-bottom: solid 3px #f2f2f2; 
+        text-align: center;
+    } 
+  
+    .navigation li:hover { 
+        border-bottom: solid 3px #0065fc;
+    }
+
+    .navigation a:hover { 
+        color: #0065fc;
+    }
+
+}
+
+
+/* MAIN ACTIVITIES MOBILE */ 
+
+@media all and (max-width:350px){ 
+
+    #search, #housing, #activities, footer{
+        margin: 0px 30px 0 30px; 
+    }
+}
+
+
+@media all and (max-width:750px){
+
+    #signUp, #search, #popular, #housing, #activities {
+         padding:  0 5% 0 5%;
+     }
+    
+/*------------------- RECHERCHE -------------------*/
+ 
+     #button_desktop {
+         display: none;
+     }
+ 
+     #buttons_filters button {
+         margin: 5px 5px 5px 0px;
+     }
+     
+     #info {
+         display: flex;
+         align-items: baseline;
+     }
+ 
+/*------------------- CARDS -------------------*/
+ 
+     .card {
+         width: 90%;
+     }
+ 
+ 
+     #popular_cards, #housing_cards, #activities_cards {
+         padding-bottom: 30px;
+         display: flex;
+         justify-content: center;
+         flex-direction: column;
+         align-items: center;
+     }
+ 
+/*------------------- ACTIVITIES FORMATS -------------------*/
+ 
+     #activities_cards .card {
+         height: 190px;
+         margin-bottom: 30px;
+     }
+     
+     #activities img {
+         border-radius: 15px 15px 0 0px;
+         height: 135px;
+         width: 100%;
+         object-fit: cover;
+     }
+ 
+}

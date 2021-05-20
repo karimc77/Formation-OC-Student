@@ -1,0 +1,364 @@
+/* TABLET ET DESKTOP */
+
+@media all and (min-width:750px) {
+
+    header {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end; 
+        padding: 0 5% 0 5%;
+        position: relative;
+    }
+
+    #logo {
+        position: absolute;
+        top: 45px;  
+        left: 25px;
+    }
+    .navigation > #signUp { 
+        order: 3;
+    }
+
+    .navigation {
+        display: flex;
+        align-items: baseline;
+
+    }
+
+    .navigation li {
+        flex: 0.5; 
+        padding: 25px 15px 0 15px;  
+        border-top: solid 3px white; 
+        text-align: center;  
+    } 
+
+    .navigation li:hover { 
+        border-top: solid 3px #0065fc;
+    }
+
+   .navigation a:hover { 
+        color: #0065fc;
+    }
+    
+    #signUp {
+        padding: 25px 0 0 15px;
+    }    
+}
+
+/* DESKTOP */
+
+@media all and (min-width: 1390px) {
+
+    #logo {
+        margin-left: 0;
+    }
+
+    header{
+        position: relative;
+        padding:0;
+    }
+
+    #logo {
+        position: absolute;
+        top: 45px;   
+        left: 0px;
+    }
+}
+
+
+/* DESKTOP */
+
+@media all and (min-width: 1391px) {
+
+    header, #search, #container_housing, #activities{
+        margin: 0px 50px 0 50px; 
+    }
+    
+    
+/*------------------- DESKTOP RECHERCHE -------------------*/
+
+    #button_mobile {
+        display: none;
+    }
+
+    #buttons_filters button {
+        margin: 15px;
+    }
+    
+    #filters {
+        display: flex;
+        align-items:baseline;
+    }
+
+    #info {
+        display: flex;
+        align-items: center;
+    }
+   
+/*------------------- DESKTOP HEBERGEMENT -------------------*/
+
+    #container_housing { 
+        display: flex; 
+        justify-content: space-between;  
+    }
+
+    #popular, #housing {
+        padding-bottom:15px;
+    }
+
+/*------------------- DESKTOP HEBERGEMENT MARSEILLE -------------------*/
+
+    #housing {
+        background-color: #f2f2f2;
+        border-radius: 15px;
+        margin-right: 2.9%;
+        width: 70%;
+    }
+
+    #housing_cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+    }
+
+    #housing .card {
+        width: 250px;
+    }
+
+    #housing h1 {
+        padding-left: 35px;
+    }
+
+    #housing h2 {
+        padding-left: 40px;
+    }
+
+    #container_housing > #housing {
+        order: -1;
+    }
+
+/*------------------- DESKTOP POPULAR -------------------*/
+
+    #popular {
+        width: 33%;
+        border-radius: 15px;
+    }
+
+    #popular_cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    #popular .card { 
+        width: 345px;
+    }
+
+    #popular img { 
+        
+        object-fit: cover;
+        border-radius: 15px 0 0 15px;
+    }
+
+    #popular h3{
+        padding-right: 0;
+    }
+    
+
+    #popular_title{
+        padding: 0 35px 25px 35px;
+        
+    }
+
+/*------------------- DESKTOP ACTIVITES FORMATS -------------------*/
+
+    #activities_cards .card {
+        width: 300px;
+        margin: 0;
+    }
+
+    #activities h1 {
+        padding: 40px 20px 35px 0;
+    }
+
+    #activities_cards img{
+        border-radius: 15px 15px 0 0;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    #vieux_port, #calanques {
+        height: 445px;
+    }
+
+    #vieux_port img, #calanques img {
+        height: 390px;  
+    }
+
+    #pomegues {
+        height: 235px; 
+    }
+
+    #pomegues img{
+        height: 180px;
+    }
+
+    #frioul {
+        height: 165px;
+    }
+
+    #frioul img{
+        height: 110px;
+    }
+
+    #notre_dame {
+        height:195px;
+    }
+
+    #notre_dame img{
+        height: 140px;
+    }
+
+    #longchamp {
+        height: 210px;
+    }
+
+    #longchamp img {
+        height: 155px;
+    }
+
+/*------------------- DESKTOP GRID ACTIVITIES -------------------*/
+
+    #activities_cards{
+       display: grid;
+       grid-template-columns: repeat(4, 300px);
+       grid-template-rows: repeat(2, 223px);
+       grid-template-areas: "a b d e" "a c d f";
+       grid-gap: 0 45px;
+   }
+    
+    #vieux_port{
+       grid-area : a;
+    }
+
+    #pomegues{
+       grid-area: b;  
+    }
+   
+    #frioul{
+       grid-area: c;
+       align-self: end;
+    }
+
+    #calanques {
+       grid-area: d; 
+    }
+
+    #notre_dame {
+       grid-area: e;  
+    }
+
+    #longchamp {
+       grid-area: f;
+       align-self: end;
+    }
+
+}
+
+
+/* TABLET */
+
+@media all and (min-width: 750px) and (max-width: 1390px) { 
+    
+
+    #search, #housing, #activities{
+        margin: 0px 30px 0 30px; 
+    }
+
+    #popular{
+        padding: 0 30px 30px 30px;
+    }
+
+/*------------------- TABLET RECHERCHE -------------------*/
+    
+    #button_mobile {
+        display: none;
+    }
+
+    #buttons_filters button {
+        margin: 5px;
+    }
+    
+    #filters {
+        display: flex;
+        align-items:baseline;
+    }
+
+    #info {
+        display: flex;
+        align-items: center;
+    }
+
+/*------------------- TABLET HEBERGEMENT -------------------*/
+
+    #popular_cards, #housing_cards, #activities_cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    #popular .card, #housing .card {
+        width: 330px;   
+    }
+   
+/*------------------- TABLET ACTIVITIES FORMATS -------------------*/
+
+    #activities_cards .card {
+        height: 190px;
+        width: 43%;
+        margin-bottom: 30px;
+    }
+    
+    #activities img {
+        border-radius: 15px 15px 0 0;
+        height: 135px;
+        width: 100%;
+        object-fit: cover;
+    }
+        
+}
+
+
+/* FOOTER */
+
+/* tablet*/
+
+@media all and (min-width: 770px) and (max-width: 1390px) {
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    footer div {
+        padding: 0px 200px 0px 0px;
+    }
+}
+
+ /* DESKTOP */
+
+@media all and (min-width: 1390px) {
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    footer div {
+        padding: 0px 200px 0px 0px;
+    }
+}

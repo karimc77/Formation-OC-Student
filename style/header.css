@@ -1,0 +1,38 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+
+#container {
+    max-width: 1440px;
+}
+
+#accomodation {
+    color:#0065fc;
+}
+
+#signUp {
+    color:#0065fc;
+}
+
+.navigation {
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.navigation ul { 
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center;
+    padding: 0; 
+    margin: 30px 0 0 0;    
+}
+
+ li { 
+    list-style: none;  
+}
+
+a { 
+    text-decoration: none;
+    color: black;  
+}
